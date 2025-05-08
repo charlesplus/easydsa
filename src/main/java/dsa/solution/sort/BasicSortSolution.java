@@ -3,19 +3,15 @@ package dsa.solution.sort;
 import dsa.solution.Solution;
 import dsa.testcase.ListSortTestCaseSet;
 import dsa.testcase.TestCaseSet;
+import lombok.Getter;
 
-import java.util.Collections;
 import java.util.List;
 
 public class BasicSortSolution implements Solution<List<Integer>, List<Integer>> {
-    // singleton
+    @Getter
     private static final BasicSortSolution instance = new BasicSortSolution();
     private BasicSortSolution() {
     }
-    public static BasicSortSolution getInstance() {
-        return instance;
-    }
-
 
     @Override
     public List<Integer> solve(List<Integer> input) {

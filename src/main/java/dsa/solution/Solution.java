@@ -3,13 +3,13 @@ package dsa.solution;
 import dsa.testcase.TestCaseSet;
 import org.apache.commons.lang3.tuple.Pair;
 
-public interface Solution<T, R> {
+public interface Solution<INPUT, RESULT> {
 
-    R solve(T input);
+    RESULT solve(INPUT input);
 
-    TestCaseSet<T, R> getTestCaseSet();
+    TestCaseSet<INPUT, RESULT> getTestCaseSet();
 
-    default Pair<Integer, Integer> runTest() {
+    default Pair<Integer/*pass*/, Integer/*total*/> runTest() {
         // print start log
         System.out.printf("Running %s -> %s ...%n", this.getClass().getSimpleName(),
                 getTestCaseSet().getClass().getSimpleName());

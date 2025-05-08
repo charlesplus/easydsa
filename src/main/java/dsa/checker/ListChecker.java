@@ -1,14 +1,13 @@
 package dsa.checker;
 
+import lombok.Getter;
+
 import java.util.List;
 
 public class ListChecker implements Checker<List> {
-    // singleton
-    private static ListChecker instance = new ListChecker();
+    @Getter
+    private final static ListChecker instance = new ListChecker();
     private ListChecker() {
-    }
-    public static ListChecker getInstance() {
-        return instance;
     }
 
     @Override

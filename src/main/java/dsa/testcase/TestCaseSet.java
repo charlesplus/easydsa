@@ -7,32 +7,32 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.List;
 
-public interface TestCaseSet<T, R> {
+public interface TestCaseSet<INPUT, RESULT> {
 
-    List<Pair<T, R>> getTestCases();
+    List<Pair<INPUT, RESULT>> getTestCases();
 
     default Checker getChecker() {
-        GeneralChecker.getInstance();
+        return GeneralChecker.getInstance();
     }
 
-    default T getTestCase(int caseIndex) {
+    default INPUT getTestCase(int caseIndex) {
         return getTestCases().get(caseIndex).getLeft();
     }
 
-    default R getExpectedResult(int caseIndex) {
+    default RESULT getExpectedResult(int caseIndex) {
         return getTestCases().get(caseIndex).getRight();
     }
 
-    default boolean check(int caseIndex, R result) {
+    default boolean check(int caseIndex, RESULT result) {
         return getChecker().check(getExpectedResult(caseIndex), result);
     }
 
-    default Pair<Integer, Integer> check(Solution<T, R> solution) {
+    default Pair<Integer, Integer> check(Solution<INPUT, RESULT> solution) {
         int passed = 0;
         for (int i = 0; i < getTestCases().size(); i++) {
-            T testCase = getTestCase(i);
-            R expectedResult = getExpectedResult(i);
-            R result = solution.solve(testCase);
+            INPUT testCase = getTestCase(i);
+            RESULT expectedResult = getExpectedResult(i);
+            RESULT result = solution.solve(testCase);
             if (check(i, result)) {
                 passed++;
             } else {

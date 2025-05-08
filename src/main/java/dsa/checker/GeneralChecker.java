@@ -1,12 +1,11 @@
 package dsa.checker;
 
+import lombok.Getter;
+
 public class GeneralChecker implements Checker {
-    // singleton
-    private static GeneralChecker instance = new GeneralChecker();
+    @Getter
+    private final static GeneralChecker instance = new GeneralChecker();
     private GeneralChecker() {
-    }
-    public static GeneralChecker getInstance() {
-        return instance;
     }
 
     @Override

@@ -1,9 +1,17 @@
 package dsa;
 
 import dsa.solution.sort.BasicSortSolution;
+import dsa.solution.sort.MergeSortSolution;
+import dsa.solution.sort.QuickSortSolution;
+import dsa.solution.tree.BinaryTreeBfsSolution;
+import dsa.solution.tree.BinaryTreeDfsSolution;
 
 public class Main {
     public static void main(String[] args) {
         BasicSortSolution.getInstance().runTest();
+        QuickSortSolution.getInstance().runTest();
+        MergeSortSolution.getInstance().runTest();
+        BinaryTreeBfsSolution.getInstance().runTest();
+        BinaryTreeDfsSolution.getInstance().runTest();
     }
 }

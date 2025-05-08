@@ -1,5 +1,5 @@
 package dsa.checker;
 
-public interface Checker<T> {
-    boolean check(T expectedResult, T actualResult);
+public interface Checker<RESULT> {
+    boolean check(RESULT expectedResult, RESULT actualResult);
 }
