@@ -1,5 +1,6 @@
 package dsa;
 
+import dsa.solution.search.BinarySearchSolution;
 import dsa.solution.sort.BasicSortSolution;
 import dsa.solution.sort.MergeSortSolution;
 import dsa.solution.sort.QuickSortSolution;
@@ -11,6 +12,7 @@ public class Main {
         BasicSortSolution.getInstance().runTest();
         QuickSortSolution.getInstance().runTest();
         MergeSortSolution.getInstance().runTest();
+        BinarySearchSolution.getInstance().runTest();
         BinaryTreeBfsSolution.getInstance().runTest();
         BinaryTreeDfsSolution.getInstance().runTest();
     }
