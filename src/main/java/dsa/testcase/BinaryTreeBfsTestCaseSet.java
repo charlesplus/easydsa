@@ -1,6 +1,6 @@
 package dsa.testcase;
 
-import dsa.testcase.ds.BinaryTreeNode;
+import dsa.ds.BinaryTreeNode;
 import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 

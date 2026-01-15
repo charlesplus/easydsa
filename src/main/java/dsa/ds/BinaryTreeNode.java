@@ -1,4 +1,4 @@
-package dsa.testcase.ds;
+package dsa.ds;
 
 import lombok.Data;
 import org.apache.commons.lang3.ObjectUtils;

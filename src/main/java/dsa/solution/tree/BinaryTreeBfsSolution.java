@@ -3,7 +3,7 @@ package dsa.solution.tree;
 import dsa.solution.Solution;
 import dsa.testcase.BinaryTreeBfsTestCaseSet;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.ds.BinaryTreeNode;
+import dsa.ds.BinaryTreeNode;
 import lombok.Getter;
 
 import java.util.*;
