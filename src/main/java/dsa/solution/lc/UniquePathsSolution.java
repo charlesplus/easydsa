@@ -1,8 +1,8 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.UniquePathsTestCaseSet;
+import dsa.testcase.lc.UniquePathsTestCaseSet;
 import lombok.Getter;
 
 /**

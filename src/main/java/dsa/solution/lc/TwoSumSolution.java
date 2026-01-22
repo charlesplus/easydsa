@@ -1,8 +1,8 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.TwoSumTestCaseSet;
+import dsa.testcase.lc.TwoSumTestCaseSet;
 import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 

@@ -1,4 +1,4 @@
-package dsa.testcase.leetcode;
+package dsa.testcase.lc;
 
 import dsa.checker.GroupAnagramsChecker;
 import dsa.testcase.TestCaseSet;

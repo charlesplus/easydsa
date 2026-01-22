@@ -1,9 +1,9 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.MergeTwoSortedListsTestCaseSet;
+import dsa.testcase.lc.MergeTwoSortedListsTestCaseSet;
 import lombok.Getter;
 
 /**

@@ -1,8 +1,8 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.SpiralMatrixTestCaseSet;
+import dsa.testcase.lc.SpiralMatrixTestCaseSet;
 import lombok.Getter;
 
 import java.util.ArrayList;

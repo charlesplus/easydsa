@@ -1,4 +1,4 @@
-package dsa.testcase.leetcode;
+package dsa.testcase.lc;
 
 import dsa.ds.ListNode;
 import dsa.testcase.TestCaseSet;

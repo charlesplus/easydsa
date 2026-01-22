@@ -1,8 +1,8 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.GroupAnagramsTestCaseSet;
+import dsa.testcase.lc.GroupAnagramsTestCaseSet;
 import lombok.Getter;
 
 import java.util.*;

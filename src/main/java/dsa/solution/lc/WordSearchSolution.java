@@ -1,8 +1,8 @@
-package dsa.solution.leetcode;
+package dsa.solution.lc;
 
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
-import dsa.testcase.leetcode.WordSearchTestCaseSet;
+import dsa.testcase.lc.WordSearchTestCaseSet;
 import lombok.Getter;
 
 /**

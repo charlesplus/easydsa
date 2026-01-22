@@ -1,14 +1,12 @@
 package dsa;
 
-import dsa.solution.lc.ListNodePartialReverseSolution;
-import dsa.solution.lc.ListNodeReverseSolution;
+import dsa.solution.lc.*;
 import dsa.solution.search.BinarySearchSolution;
 import dsa.solution.sort.BasicSortSolution;
 import dsa.solution.sort.MergeSortSolution;
 import dsa.solution.sort.QuickSortSolution;
 import dsa.solution.tree.BinaryTreeBfsSolution;
 import dsa.solution.tree.BinaryTreeDfsSolution;
-import dsa.solution.leetcode.*;
 
 public class Main {
     public static void main(String[] args) {
