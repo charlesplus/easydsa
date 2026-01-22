@@ -1,5 +1,7 @@
 package dsa;
 
+import dsa.solution.lc.ListNodePartialReverseSolution;
+import dsa.solution.lc.ListNodeReverseSolution;
 import dsa.solution.search.BinarySearchSolution;
 import dsa.solution.sort.BasicSortSolution;
 import dsa.solution.sort.MergeSortSolution;
@@ -15,5 +17,7 @@ public class Main {
         BinarySearchSolution.getInstance().runTest();
         BinaryTreeBfsSolution.getInstance().runTest();
         BinaryTreeDfsSolution.getInstance().runTest();
+        ListNodeReverseSolution.getInstance().runTest();
+        ListNodePartialReverseSolution.getInstance().runTest();
     }
 }
