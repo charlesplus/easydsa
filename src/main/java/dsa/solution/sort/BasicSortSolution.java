@@ -1,5 +1,6 @@
 package dsa.solution.sort;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.ListSortTestCaseSet;
 import dsa.testcase.TestCaseSet;
@@ -7,6 +8,7 @@ import lombok.Getter;
 
 import java.util.List;
 
+@RunSolution(runByDefault = true)
 public class BasicSortSolution implements Solution<List<Integer>, List<Integer>> {
     @Getter
     private static final BasicSortSolution instance = new BasicSortSolution();

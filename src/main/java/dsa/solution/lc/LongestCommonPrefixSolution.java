@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.LongestCommonPrefixTestCaseSet;
@@ -25,6 +26,7 @@ import lombok.Getter;
  * - 0 <= strs[i].length <= 200
  * - strs[i] consists of only lowercase English letters.
  */
+@RunSolution(runByDefault = true)
 public class LongestCommonPrefixSolution implements Solution<String[], String> {
     @Getter
     private static final LongestCommonPrefixSolution instance = new LongestCommonPrefixSolution();

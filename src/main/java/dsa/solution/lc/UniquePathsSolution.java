@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.UniquePathsTestCaseSet;
@@ -28,6 +29,7 @@ import lombok.Getter;
  * Constraints:
  * - 1 <= m, n <= 100
  */
+@RunSolution(runByDefault = true)
 public class UniquePathsSolution implements Solution<int[], Integer> {
     @Getter
     private static final UniquePathsSolution instance = new UniquePathsSolution();

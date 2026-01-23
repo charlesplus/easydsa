@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.BestTimeToBuyAndSellStockTestCaseSet;
@@ -26,6 +27,7 @@ import lombok.Getter;
  * - 1 <= prices.length <= 10^5
  * - 0 <= prices[i] <= 10^4
  */
+@RunSolution(runByDefault = true)
 public class BestTimeToBuyAndSellStockSolution implements Solution<int[], Integer> {
     @Getter
     private static final BestTimeToBuyAndSellStockSolution instance = new BestTimeToBuyAndSellStockSolution();

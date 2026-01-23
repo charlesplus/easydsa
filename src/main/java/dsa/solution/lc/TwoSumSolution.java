@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.TwoSumTestCaseSet;
@@ -37,6 +38,7 @@ import java.util.Map;
  *
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
+@RunSolution(runByDefault = true)
 public class TwoSumSolution implements Solution<Pair<int[], Integer>, int[]> {
     @Getter
     private static final TwoSumSolution instance = new TwoSumSolution();

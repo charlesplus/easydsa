@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.RotateImageTestCaseSet;
@@ -25,6 +26,7 @@ import lombok.Getter;
  * - 1 <= n <= 20
  * - -1000 <= matrix[i][j] <= 1000
  */
+@RunSolution(runByDefault = true)
 public class RotateImageSolution implements Solution<int[][], Void> {
     @Getter
     private static final RotateImageSolution instance = new RotateImageSolution();

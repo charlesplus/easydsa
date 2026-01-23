@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.SpiralMatrixTestCaseSet;
@@ -27,6 +28,7 @@ import java.util.List;
  * - 1 <= m, n <= 10
  * - -100 <= matrix[i][j] <= 100
  */
+@RunSolution(runByDefault = true)
 public class SpiralMatrixSolution implements Solution<int[][], List<Integer>> {
     @Getter
     private static final SpiralMatrixSolution instance = new SpiralMatrixSolution();

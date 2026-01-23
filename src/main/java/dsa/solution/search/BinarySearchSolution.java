@@ -1,5 +1,7 @@
 package dsa.solution.search;
 
+import dsa.annotation.RunOnce;
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.ListSearchTestCaseSet;
 import dsa.testcase.TestCaseSet;
@@ -8,6 +10,8 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.List;
 
+// @RunOnce  // Temporary for testing command-line functionality
+@RunSolution(runByDefault = true)
 public class BinarySearchSolution implements Solution<Pair<List<Integer>,Integer>, Integer> {
 
     // singleton

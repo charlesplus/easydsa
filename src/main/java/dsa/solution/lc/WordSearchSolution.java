@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.WordSearchTestCaseSet;
@@ -33,6 +34,7 @@ import lombok.Getter;
  *
  * Follow-up: Could you use search pruning to make your solution faster with a larger board?
  */
+@RunSolution(runByDefault = true)
 public class WordSearchSolution implements Solution<Object[], Boolean> {
     @Getter
     private static final WordSearchSolution instance = new WordSearchSolution();

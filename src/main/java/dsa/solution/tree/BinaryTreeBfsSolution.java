@@ -1,5 +1,6 @@
 package dsa.solution.tree;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.BinaryTreeBfsTestCaseSet;
 import dsa.testcase.TestCaseSet;
@@ -8,6 +9,7 @@ import lombok.Getter;
 
 import java.util.*;
 
+@RunSolution(runByDefault = true)
 public class BinaryTreeBfsSolution implements Solution<BinaryTreeNode<Integer>, List<Integer>> {
     // singleton
     @Getter

@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.ValidParenthesesTestCaseSet;
@@ -31,6 +32,7 @@ import java.util.Stack;
  * - 1 <= s.length <= 10^4
  * - s consists of parentheses only '()[]{}'.
  */
+@RunSolution(runByDefault = true)
 public class ValidParenthesesSolution implements Solution<String, Boolean> {
     @Getter
     private static final ValidParenthesesSolution instance = new ValidParenthesesSolution();

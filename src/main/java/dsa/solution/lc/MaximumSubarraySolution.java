@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.MaximumSubarrayTestCaseSet;
@@ -30,6 +31,7 @@ import lombok.Getter;
  *
  * Follow-up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
  */
+@RunSolution(runByDefault = true)
 public class MaximumSubarraySolution implements Solution<int[], Integer> {
     @Getter
     private static final MaximumSubarraySolution instance = new MaximumSubarraySolution();

@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.ListNodePartialReverseTestCaseSet;
@@ -7,6 +8,7 @@ import dsa.testcase.TestCaseSet;
 import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 
+@RunSolution(runByDefault = true)
 public class ListNodePartialReverseSolution implements Solution<Pair<ListNode<Integer>, Pair<Integer, Integer>>, ListNode<Integer>> {
     @Getter
     private static final ListNodePartialReverseSolution instance = new ListNodePartialReverseSolution();

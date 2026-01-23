@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.ClimbingStairsTestCaseSet;
@@ -29,6 +30,7 @@ import lombok.Getter;
  * Constraints:
  * - 1 <= n <= 45
  */
+@RunSolution(runByDefault = true)
 public class ClimbingStairsSolution implements Solution<Integer, Integer> {
     @Getter
     private static final ClimbingStairsSolution instance = new ClimbingStairsSolution();

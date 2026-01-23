@@ -1,5 +1,6 @@
 package dsa.solution.sort;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.ListSortTestCaseSet;
 import dsa.testcase.TestCaseSet;
@@ -8,6 +9,7 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.List;
 
+@RunSolution(runByDefault = true)
 public class MergeSortSolution implements Solution<List<Integer>, List<Integer>> {
     @Getter
     private static final MergeSortSolution instance = new MergeSortSolution();

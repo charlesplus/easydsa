@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
@@ -30,6 +31,7 @@ import lombok.Getter;
  * - -100 <= Node.val <= 100
  * - Both list1 and list2 are sorted in non-decreasing order.
  */
+@RunSolution(runByDefault = true)
 public class MergeTwoSortedListsSolution implements Solution<Object[], ListNode<Integer>> {
     @Getter
     private static final MergeTwoSortedListsSolution instance = new MergeTwoSortedListsSolution();

@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.GroupAnagramsTestCaseSet;
@@ -31,6 +32,7 @@ import java.util.*;
  * - 0 <= strs[i].length <= 100
  * - strs[i] consists of lowercase English letters.
  */
+@RunSolution(runByDefault = true)
 public class GroupAnagramsSolution implements Solution<String[], List<List<String>>> {
     @Getter
     private static final GroupAnagramsSolution instance = new GroupAnagramsSolution();

@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.RemoveDuplicatesFromSortedArrayTestCaseSet;
@@ -34,6 +35,7 @@ import lombok.Getter;
  * - -100 <= nums[i] <= 100
  * - nums is sorted in non-decreasing order.
  */
+@RunSolution(runByDefault = true)
 public class RemoveDuplicatesFromSortedArraySolution implements Solution<int[], Integer> {
     @Getter
     private static final RemoveDuplicatesFromSortedArraySolution instance = new RemoveDuplicatesFromSortedArraySolution();

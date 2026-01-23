@@ -44,6 +44,12 @@
             <version>1.18.24</version>
             <optional>true</optional>
         </dependency>
+        <!--引入Reflections for classpath scanning-->
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.10.2</version>
+        </dependency>
 
     </dependencies>
 

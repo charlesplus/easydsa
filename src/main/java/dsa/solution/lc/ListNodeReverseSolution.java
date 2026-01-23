@@ -1,11 +1,13 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.ListNodeReverseTestCaseSet;
 import dsa.testcase.TestCaseSet;
 import lombok.Getter;
 
+@RunSolution(runByDefault = true)
 public class ListNodeReverseSolution implements Solution<ListNode<Integer>, ListNode<Integer>> {
     @Getter
     private static final ListNodeReverseSolution instance = new ListNodeReverseSolution();

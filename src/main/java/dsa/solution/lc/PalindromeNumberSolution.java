@@ -1,5 +1,6 @@
 package dsa.solution.lc;
 
+import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.PalindromeNumberTestCaseSet;
@@ -31,6 +32,7 @@ import lombok.Getter;
  *
  * Follow-up: Could you solve it without converting the integer to a string?
  */
+@RunSolution(runByDefault = true)
 public class PalindromeNumberSolution implements Solution<Integer, Boolean> {
     @Getter
     private static final PalindromeNumberSolution instance = new PalindromeNumberSolution();
