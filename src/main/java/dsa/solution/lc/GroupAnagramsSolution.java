@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.GroupAnagramsTestCaseSet;
-import lombok.Getter;
 
 import java.util.*;
 
@@ -34,10 +33,6 @@ import java.util.*;
  */
 @RunSolution(runByDefault = true)
 public class GroupAnagramsSolution implements Solution<String[], List<List<String>>> {
-    @Getter
-    private static final GroupAnagramsSolution instance = new GroupAnagramsSolution();
-    private GroupAnagramsSolution() {
-    }
 
     @Override
     public List<List<String>> solve(String[] strs) {

@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.RotateImageTestCaseSet;
-import lombok.Getter;
 
 /**
  * Rotate Image Solution
@@ -28,10 +27,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class RotateImageSolution implements Solution<int[][], Void> {
-    @Getter
-    private static final RotateImageSolution instance = new RotateImageSolution();
-    private RotateImageSolution() {
-    }
 
     @Override
     public Void solve(int[][] matrix) {

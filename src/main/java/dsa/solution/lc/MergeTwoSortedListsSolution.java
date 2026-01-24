@@ -5,7 +5,6 @@ import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.MergeTwoSortedListsTestCaseSet;
-import lombok.Getter;
 
 /**
  * Merge Two Sorted Lists Solution
@@ -33,10 +32,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class MergeTwoSortedListsSolution implements Solution<Object[], ListNode<Integer>> {
-    @Getter
-    private static final MergeTwoSortedListsSolution instance = new MergeTwoSortedListsSolution();
-    private MergeTwoSortedListsSolution() {
-    }
 
     @Override
     public ListNode<Integer> solve(Object[] input) {

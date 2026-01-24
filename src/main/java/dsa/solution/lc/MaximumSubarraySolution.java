@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.MaximumSubarrayTestCaseSet;
-import lombok.Getter;
 
 /**
  * Maximum Subarray Solution
@@ -33,10 +32,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class MaximumSubarraySolution implements Solution<int[], Integer> {
-    @Getter
-    private static final MaximumSubarraySolution instance = new MaximumSubarraySolution();
-    private MaximumSubarraySolution() {
-    }
 
     @Override
     public Integer solve(int[] nums) {

@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.LongestCommonPrefixTestCaseSet;
-import lombok.Getter;
 
 /**
  * Longest Common Prefix Solution
@@ -28,10 +27,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class LongestCommonPrefixSolution implements Solution<String[], String> {
-    @Getter
-    private static final LongestCommonPrefixSolution instance = new LongestCommonPrefixSolution();
-    private LongestCommonPrefixSolution() {
-    }
 
     @Override
     public String solve(String[] strs) {

@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.ClimbingStairsTestCaseSet;
-import lombok.Getter;
 
 /**
  * Climbing Stairs Solution
@@ -32,10 +31,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class ClimbingStairsSolution implements Solution<Integer, Integer> {
-    @Getter
-    private static final ClimbingStairsSolution instance = new ClimbingStairsSolution();
-    private ClimbingStairsSolution() {
-    }
 
     @Override
     public Integer solve(Integer n) {

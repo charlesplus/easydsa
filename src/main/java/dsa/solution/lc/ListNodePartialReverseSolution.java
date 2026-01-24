@@ -5,15 +5,10 @@ import dsa.ds.ListNode;
 import dsa.solution.Solution;
 import dsa.testcase.ListNodePartialReverseTestCaseSet;
 import dsa.testcase.TestCaseSet;
-import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 
 @RunSolution(runByDefault = true)
 public class ListNodePartialReverseSolution implements Solution<Pair<ListNode<Integer>, Pair<Integer, Integer>>, ListNode<Integer>> {
-    @Getter
-    private static final ListNodePartialReverseSolution instance = new ListNodePartialReverseSolution();
-    private ListNodePartialReverseSolution() {
-    }
 
     @Override
     public ListNode<Integer> solve(Pair<ListNode<Integer>, Pair<Integer, Integer>> input) {

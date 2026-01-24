@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.SpiralMatrixTestCaseSet;
-import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +29,6 @@ import java.util.List;
  */
 @RunSolution(runByDefault = true)
 public class SpiralMatrixSolution implements Solution<int[][], List<Integer>> {
-    @Getter
-    private static final SpiralMatrixSolution instance = new SpiralMatrixSolution();
-    private SpiralMatrixSolution() {
-    }
 
     @Override
     public List<Integer> solve(int[][] matrix) {

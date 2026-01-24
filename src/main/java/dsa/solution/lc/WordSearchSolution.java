@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.WordSearchTestCaseSet;
-import lombok.Getter;
 
 /**
  * Word Search Solution
@@ -36,10 +35,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class WordSearchSolution implements Solution<Object[], Boolean> {
-    @Getter
-    private static final WordSearchSolution instance = new WordSearchSolution();
-    private WordSearchSolution() {
-    }
 
     @Override
     public Boolean solve(Object[] input) {

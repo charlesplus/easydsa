@@ -5,16 +5,11 @@ import dsa.solution.Solution;
 import dsa.testcase.BinaryTreeDfsTestCaseSet;
 import dsa.testcase.TestCaseSet;
 import dsa.ds.BinaryTreeNode;
-import lombok.Getter;
 
 import java.util.*;
 
 @RunSolution(runByDefault = true)
 public class BinaryTreeDfsSolution implements Solution<BinaryTreeNode<Integer>, List<Integer>> {
-    @Getter
-    private static final BinaryTreeDfsSolution instance = new BinaryTreeDfsSolution();
-    private BinaryTreeDfsSolution() {
-    }
 
     @Override
     public List<Integer> solve(BinaryTreeNode<Integer> input) {

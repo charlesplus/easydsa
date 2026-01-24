@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.RemoveDuplicatesFromSortedArrayTestCaseSet;
-import lombok.Getter;
 
 /**
  * Remove Duplicates from Sorted Array Solution
@@ -37,10 +36,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class RemoveDuplicatesFromSortedArraySolution implements Solution<int[], Integer> {
-    @Getter
-    private static final RemoveDuplicatesFromSortedArraySolution instance = new RemoveDuplicatesFromSortedArraySolution();
-    private RemoveDuplicatesFromSortedArraySolution() {
-    }
 
     @Override
     public Integer solve(int[] nums) {

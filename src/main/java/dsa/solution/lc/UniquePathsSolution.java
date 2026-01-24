@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.UniquePathsTestCaseSet;
-import lombok.Getter;
 
 /**
  * Unique Paths Solution
@@ -31,10 +30,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class UniquePathsSolution implements Solution<int[], Integer> {
-    @Getter
-    private static final UniquePathsSolution instance = new UniquePathsSolution();
-    private UniquePathsSolution() {
-    }
 
     @Override
     public Integer solve(int[] input) {

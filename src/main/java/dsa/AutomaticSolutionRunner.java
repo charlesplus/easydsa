@@ -10,20 +10,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Automatic Solution Runner that scans the classpath for all Solution implementations
+ * Automatic Solution Runner that scans the classpath for all Solution
+ * implementations
  * and executes them based on annotations or command-line arguments.
  *
  * Command-line arguments take priority:
- * - If arguments provided: run solutions matching the names (case-insensitive, partial match)
+ * - If arguments provided: run solutions matching the names (case-insensitive,
+ * partial match)
  * - Otherwise, use annotation-based execution:
- *   - Solutions with @RunOnce annotation will be the only ones executed
- *   - Solutions with @RunSolution(runByDefault=true) will be executed by default
+ * - Solutions with @RunOnce annotation will be the only ones executed
+ * - Solutions with @RunSolution(runByDefault=true) will be executed by default
  */
 public class AutomaticSolutionRunner {
 
     /**
      * Runs solution classes based on command-line arguments or annotations
-     * @param args Optional solution class names to run (case-insensitive, partial match)
+     * 
+     * @param args Optional solution class names to run (case-insensitive, partial
+     *             match)
      */
     public static void runSolutions(String... args) {
         // Create a Reflections instance to scan the dsa.solution package
@@ -53,8 +57,9 @@ public class AutomaticSolutionRunner {
             }
 
             System.out.println("Found " + solutionClasses.size() + " total solution classes.");
-            System.out.println("Executing " + classesToExecute.size() + " solution classes based on command-line arguments: " +
-                              String.join(", ", args) + ". Starting execution...\n");
+            System.out.println(
+                    "Executing " + classesToExecute.size() + " solution classes based on command-line arguments: " +
+                            String.join(", ", args) + ". Starting execution...\n");
 
             executeSolutions(classesToExecute, classesToExecute.size());
             return;
@@ -99,7 +104,7 @@ public class AutomaticSolutionRunner {
 
         System.out.println("Found " + solutionClasses.size() + " total solution classes.");
         System.out.println("Executing " + classesToExecute.size() + " solution classes marked with " +
-                          executionType + ". Starting execution...\n");
+                executionType + ". Starting execution...\n");
 
         executeSolutions(classesToExecute, classesToExecute.size());
     }
@@ -112,11 +117,10 @@ public class AutomaticSolutionRunner {
 
         for (Class<? extends Solution> solutionClass : classesToExecute) {
             try {
-                // Check if the class follows singleton pattern with getInstance()
-                Method getInstanceMethod = solutionClass.getMethod("getInstance");
-
-                // Get the singleton instance
-                Solution solutionInstance = (Solution) getInstanceMethod.invoke(null);
+                // Instantiate the solution class using the no-arg constructor
+                java.lang.reflect.Constructor<? extends Solution> constructor = solutionClass.getDeclaredConstructor();
+                constructor.setAccessible(true);
+                Solution solutionInstance = constructor.newInstance();
 
                 // Run the test
                 System.out.println("Executing: " + solutionClass.getSimpleName());
@@ -126,15 +130,15 @@ public class AutomaticSolutionRunner {
                 successCount++;
 
             } catch (NoSuchMethodException e) {
-                // If getInstance method doesn't exist, skip this class
-                System.out.println("Skipping " + solutionClass.getSimpleName() + " - no getInstance() method");
+                System.out.println("Skipping " + solutionClass.getSimpleName() + " - no no-arg constructor found");
             } catch (Exception e) {
                 System.err.println("Failed to execute " + solutionClass.getSimpleName() + ": " + e.getMessage());
                 e.printStackTrace();
             }
         }
 
-        System.out.println("\nExecution Summary: " + successCount + "/" + totalCount + " solutions executed successfully.");
+        System.out.println(
+                "\nExecution Summary: " + successCount + "/" + totalCount + " solutions executed successfully.");
     }
 
     public static void main(String[] args) {

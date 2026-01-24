@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.TwoSumTestCaseSet;
-import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.HashMap;
@@ -40,10 +39,6 @@ import java.util.Map;
  */
 @RunSolution(runByDefault = true)
 public class TwoSumSolution implements Solution<Pair<int[], Integer>, int[]> {
-    @Getter
-    private static final TwoSumSolution instance = new TwoSumSolution();
-    private TwoSumSolution() {
-    }
 
     @Override
     public int[] solve(Pair<int[], Integer> input) {

@@ -5,7 +5,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.ListSearchTestCaseSet;
 import dsa.testcase.TestCaseSet;
-import lombok.Getter;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.List;
@@ -14,11 +13,6 @@ import java.util.List;
 @RunSolution(runByDefault = true)
 public class BinarySearchSolution implements Solution<Pair<List<Integer>,Integer>, Integer> {
 
-    // singleton
-    @Getter
-    private static final BinarySearchSolution instance = new BinarySearchSolution();
-    private BinarySearchSolution() {
-    }
 
     @Override
     public Integer solve(Pair<List<Integer>, Integer> input) {

@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.ValidParenthesesTestCaseSet;
-import lombok.Getter;
 import java.util.Stack;
 
 /**
@@ -34,10 +33,6 @@ import java.util.Stack;
  */
 @RunSolution(runByDefault = true)
 public class ValidParenthesesSolution implements Solution<String, Boolean> {
-    @Getter
-    private static final ValidParenthesesSolution instance = new ValidParenthesesSolution();
-    private ValidParenthesesSolution() {
-    }
 
     @Override
     public Boolean solve(String s) {

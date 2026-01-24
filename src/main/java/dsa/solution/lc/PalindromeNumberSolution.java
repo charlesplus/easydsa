@@ -4,7 +4,6 @@ import dsa.annotation.RunSolution;
 import dsa.solution.Solution;
 import dsa.testcase.TestCaseSet;
 import dsa.testcase.lc.PalindromeNumberTestCaseSet;
-import lombok.Getter;
 
 /**
  * Palindrome Number Solution
@@ -34,10 +33,6 @@ import lombok.Getter;
  */
 @RunSolution(runByDefault = true)
 public class PalindromeNumberSolution implements Solution<Integer, Boolean> {
-    @Getter
-    private static final PalindromeNumberSolution instance = new PalindromeNumberSolution();
-    private PalindromeNumberSolution() {
-    }
 
     @Override
     public Boolean solve(Integer x) {
